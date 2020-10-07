@@ -1,0 +1,257 @@
+/*globales*/
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/roboto-v20-latin-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/roboto-v20-latin-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+body{
+    background-color: white;
+
+    font-family: "Roboto";
+}
+
+input,select{
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media(max-width: 700px){
+    #nav form{
+    
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    } 
+
+    #boton{
+        margin-bottom: 10px;
+
+    }
+
+    #nav form select{
+        width: 95%;
+        margin: 0px auto;
+    }
+
+    .container{
+        grid-template-columns: 1fr!important;
+    }
+
+    
+}
+
+@media(max-width: 590px){
+    #footer{
+        font-size: 18px!important;
+    }
+
+    #seccion{
+        grid-template-columns: 1fr!important;
+    }
+}
+
+@media(max-width:430px){
+    #nav form select{
+        width: 70%;
+    }
+
+    #nav form input{
+        width: 70%;
+        margin: 0px auto!important;  
+    }
+    #footer{
+        font-size: 10px!important;
+    }
+
+
+
+}
+
+
+@media(max-width:330px){
+    #header h2{
+        font-size: 26px!important;
+    }
+    #nav form input[type="text"]{
+        font-size: 10px!important; 
+    }
+    
+}
+
+
+/*contenedor general*/
+.contenedor-general{
+    background: #aaa; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aaa, #ddd); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aaa, #ddd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 80%;
+    margin: 0px auto;
+    
+}
+
+
+/*header*/
+#header{
+    min-height: 150px;
+    width: 100%;
+    background: rgb(73, 137, 255); 
+}
+
+#header h2{
+   color:white;
+   font-size: 48px;
+   letter-spacing: 4px;
+   text-align: center;
+   line-height: 150px;
+   text-shadow: 2px 2px 3px black;
+}
+
+/*nav*/
+#nav{
+    
+    width: 100%;
+    min-height: 75px;
+ 
+}
+
+#nav form{
+    width: 100%;
+    line-height: 75px;
+    margin: 0px auto;
+    background-color: rgb(45, 97, 121);
+    text-align: center;   
+}
+
+#nav form input{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#boton{
+    cursor: pointer;
+    background-color: #ccc ;
+}
+#boton:hover{
+    background: rgb(73, 137, 255); 
+    color:white;
+}
+
+/*CONTAINER y CONTENIDO PPAL*/
+.container{
+    
+    display: grid;
+    grid-template-columns: 70% 30%;
+    min-height: 1000px;
+}
+
+#seccion{
+    display: grid;  
+    grid-template-columns: 50% 50%;
+    padding: 5px;
+    margin: 5px;
+
+}
+
+.articulo{
+
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.67);
+    -moz-box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.67);
+    box-shadow: 0px 0px 25px 8px rgba(0,0,0,0.67);
+}
+
+.articulo img{
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    margin: 0px auto;
+}
+
+.articulo h3,
+.articulo h4
+{
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.articulo p{
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.articulo a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    background-color: rgb(45, 97, 121);
+    color: white;
+    padding: 15px;
+    width: 50%;
+    line-height: 15px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.articulo a:hover{
+    background-color: rgb(73, 137, 255);
+}
+
+/*sidebar*/
+
+.lateral{
+    background-color: wheat;
+    
+
+}
+
+.lateral h3{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 3px black;
+    font-size: 26px;
+}
+
+
+.lateral img{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.thumb{
+    text-align: center;
+}
+
+.thumb h4{
+    margin-bottom: 30px;
+}
+
+/*footer*/
+#footer{
+    height: 100px;
+    line-height: 100px;
+    background: rgb(73, 137, 255); 
+    text-align: center;
+    color: white;
+    font-size: 26px;
+}
+
+
+

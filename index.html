@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class=contenedor-general>
+
+        <header id="header">
+            <h2>Biblioteca Digital</h2>
+        </header>
+
+        <nav id="nav">
+            <form action="#" method = "GET" name="formulario" id="formulario">
+                <input type="text" id ="valor-buscado" placeholder="Escribe aquí tu búsqueda...">
+
+                <select name="select" id="select" onchange="verCategorias()">
+                    <option value="tema">Temática</option>
+                    <option value="titulo">Título</option>
+                    <option value="autor">Autor</option>
+                    <option value="categoria">Categoria</option>
+                </select>
+
+                <select name="categorias" id="categorias" style="display: none;">
+                
+                </select>
+
+                <input type="button" name = "boton" id= "boton" onclick="buscarLibros()"  value="Buscar">
+
+            </form>
+        </nav>
+
+
+        <div class="container">
+   
+            <section id ="seccion">
+                
+  
+            </section>
+
+
+            <aside class ="lateral">
+                <h3 id="titulo">Libros destacados de Programación</h3>
+
+                
+
+            </aside>
+
+
+
+        </div>
+
+        <footer id="footer">
+            Desarrollado por César Schefer &copy; - 2020
+        </footer>
+
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+</body>
+
+</html>
